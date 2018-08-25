@@ -1,0 +1,30 @@
+<!--
+Componente navbar de bootstrap para angular
+-->
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+  <!-- link al home del sistema -->
+  <a class="navbar-brand" href="#" (click)="seleccionarMenu(0)">Menu dinámico</a>
+  <!-- tengo que implemetar un for para que sea dinamica la barra de navegacion -->
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+    	<!-- cada li mediante click llama al metodo seleccionarMenu con la opcion correspondiente -->
+      <li class="nav-item"><a class="nav-link" href="#" (click)="seleccionarMenu(1)">Menu 1</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#" (click)="seleccionarMenu(2)">Menu 2</a></li>
+    	<li class="nav-item"><a class="nav-link" href="#" (click)="seleccionarMenu(3)">Menu 3</a></li>
+    </ul>
+
+    <!-- en su momento este listado de perfiles tiene que ser dinamico para cada usuario -->
+    <ul class="navbar-nav">
+      <div ngbDropdown class="d-inline-block col text-right">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Selección de perfil</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <!-- cada li mediante click llama al metodo seleccionarPerfil con la opcion correspondiente -->
+          <button class="dropdown-item" (click)="seleccionarPerfil(1)">Perfil 1</button>
+          <button class="dropdown-item" (click)="seleccionarPerfil(2)">Perfil 2</button>
+          <button class="dropdown-item" (click)="seleccionarPerfil(3)">Perfil 3</button>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+

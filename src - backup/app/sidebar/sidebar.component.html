@@ -1,0 +1,14 @@
+<!--
+Este componente arma dinamicamente el menu, tomandolo directamente desde el servicio mensajero
+Tengo que pensar si esto esta bien desde la teoria de angular o si no corresponde en realidad.
+-->
+	<ul class="list-group">
+		<!-- el ngFor lee el menu activo -->
+		<div *ngFor="let item of lMenuActivo()">	
+		<!-- se populan las opciones y atributos con cada elemento -->
+		<li class="list-group-item" [class.list-group-item-secondary]="item.active" [hidden]="!item.visible">
+		<a (click)="lToggleVisibility(item.id)">
+		{{ item.name }}
+		</a></li>
+		</div>
+	</ul>

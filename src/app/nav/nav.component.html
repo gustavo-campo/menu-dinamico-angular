@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Sistema</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="seleccionarMenu(1)">Menu 1<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" (click)="seleccionarMenu(2)">Menu 2<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" (click)="seleccionarMenu(3)">Menu 3<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Seleccionar perfil
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item" type="button" (click)="seleccionarPerfil(1)">Perfil 1</button>
+        <button class="dropdown-item" type="button" (click)="seleccionarPerfil(2)">Perfil 2</button>
+        <button class="dropdown-item" type="button" (click)="seleccionarPerfil(3)">Perfil 3</button>
+      </div>
+    </div>
+  </div>
+</nav>

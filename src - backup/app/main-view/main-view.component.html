@@ -1,0 +1,17 @@
+<!-- 
+Grupo de contenedores para las aplicaciones
+Cada componente se carga mediante un booleano en el servicio mensajero
+OJO! esto esta mal y lo tengo que cambiar por routes, no esta bien consultar variables a un servicio directamente sobre el html
+-->
+
+<div class="container-fluid"><app-dummy1 *ngIf="visibleDummy1()"></app-dummy1></div>
+<div class="container-fluid"><app-dummy2 *ngIf="visibleDummy2()"></app-dummy2></div>
+<div class="container-fluid"><app-dummy3 *ngIf="visibleDummy3()"></app-dummy3></div>
+<div class="container-fluid"><app-dummy4 *ngIf="visibleDummy4()"></app-dummy4></div>
+<div class="container-fluid"><app-dummy5 *ngIf="visibleDummy5()"></app-dummy5></div>
+<div class="container-fluid"><app-dummy6 *ngIf="visibleDummy6()"></app-dummy6></div>
+<div class="container-fluid"><app-dummy7 *ngIf="visibleDummy7()"></app-dummy7></div>
+<div class="container-fluid"><app-dummy8 *ngIf="visibleDummy8()"></app-dummy8></div>
+<div class="container-fluid">
+	<app-footer></app-footer>
+</div>

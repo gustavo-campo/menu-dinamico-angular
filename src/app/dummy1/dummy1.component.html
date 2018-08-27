@@ -1,7 +1,6 @@
 <div class="container-fluid">
 		<div class="calendar">
-			<h3> Módulo 1 cargado exitosamente.</h3>
-
+			<h3> Módulo 1 cargado exitosamente.</h3> <br>
 	    <div class="month">
 	        <ul>
 	            <a href="">
@@ -61,5 +60,37 @@
 	            <li><a href="">30</a></li>
 	            <li><a href="">31</a></li>
 	    	</ul>
-		</div>		
+	    	<br>
+		</div>	
+
+		<div> <!-- boton salir -->
+				<!-- Button trigger modal -->
+				<div class="text-right">
+				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+				  Salir
+				</button>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Esta seguro de salir?</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        Advertencia: Se perderan los cambios realizados.
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				        <button type="button" class="btn btn-primary"  data-dismiss="modal"><a class="text-white" routerLink="/">Salir</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+		</div><!-- boton salir -->
+
 </div>

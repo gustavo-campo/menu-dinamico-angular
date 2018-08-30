@@ -30,6 +30,9 @@ import { MensajeroService } from './_services/mensajero.service';
 //routing
 import { RouterModule, Routes } from '@angular/router';
 
+//servicio http
+import { HttpClientModule } from '@angular/common/http';
+
 //se declaran los componentes, se importan los modulos (por ej bootstrap) y se registran como providers a los servicios.
 @NgModule({
   declarations: [
@@ -48,7 +51,8 @@ import { RouterModule, Routes } from '@angular/router';
     Dummy8Component
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
+    HttpClientModule, 
     NgbModule.forRoot(),
     RouterModule.forRoot([
       { path: 'dummy1', component: Dummy1Component },

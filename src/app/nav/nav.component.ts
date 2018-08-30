@@ -10,14 +10,13 @@ import { MensajeroService } from '../_services/mensajero.service';
 export class NavComponent implements OnInit {
 
   //se le inyecta el servicio al constructor
-  constructor(private mensajeroService:MensajeroService) {
-
-  }
+  constructor(private mensajeroService:MensajeroService) {}
 
   ngOnInit() {
     //aca se podria elegir que menu inicia por defecto
     //por ej:
     //this.seleccionarMenu(1);
+    this.mensajeroService.traerJSON();
   }
   
   //este metodo es el encargado de crear el menu con los elementos que deseamos
@@ -27,19 +26,19 @@ export class NavComponent implements OnInit {
       case 0:
       //deep copy de objetos, se puede hacer mucho mejor
       //mandando la funcionalidad directamente a la clase
-      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menu0);
+      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menuCompleto.slice(0));
       break;
 
       case 1:
-      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menu1);
+      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menuCompleto.slice(0,3));
       break;
 
       case 2:
-      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menu2);
+      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menuCompleto.slice(3,6));
       break;
 
       case 3:
-      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menu3);
+      this.mensajeroService.menuActivo = Object.assign([], this.mensajeroService.menuCompleto.slice(6,8));
       break;
     }
   }

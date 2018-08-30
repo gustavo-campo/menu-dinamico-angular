@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "url" : "/dummy1",
+        "name" : "Módulo 1",
+        "visible" : true
+    },
+    {
+        "id" : 2,
+        "url" : "/dummy2",
+        "name" : "Módulo 2",
+        "visible" : true
+    },
+    {
+        "id" : 3,
+        "url" : "/dummy3",
+        "name" : "Módulo 3",
+        "visible" : true
+    },
+    {
+        "id" : 4,
+        "url" : "/dummy4",
+        "name" : "Módulo 4",
+        "visible" : true
+    },
+    {
+        "id" : 5,
+        "url" : "/dummy5",
+        "name" : "Módulo 5",
+        "visible" : true
+    },
+    {
+        "id" : 6,
+        "url" : "/dummy6",
+        "name" : "Módulo 6",
+        "visible" : true
+    },
+    {
+        "id" : 7,
+        "url" : "/dummy7",
+        "name" : "Módulo 7",
+        "visible" : true
+    },
+    {
+        "id" : 8,
+        "url" : "/dummy8",
+        "name" : "Módulo 8",
+        "visible" : true
+    }
+]
